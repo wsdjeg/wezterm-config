@@ -1,8 +1,10 @@
 -- Pull in the wezterm API
-local wezterm = require 'wezterm'
+local wezterm = require('wezterm')
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
+
+config.default_prog = { 'nvim' }
 
 -- This is where you actually apply your config choices.
 
@@ -13,7 +15,10 @@ config.initial_rows = 28
 -- or, changing the font size and color scheme.
 config.font_size = 13
 config.color_scheme = 'OneDark (base16)'
-wezterm.font("SauceCodePro Nerd Font Mono", {weight="Regular", stretch="Normal", style="Normal"})
+wezterm.font(
+  'SauceCodePro Nerd Font Mono',
+  { weight = 'Regular', stretch = 'Normal', style = 'Normal' }
+)
 
 -- Finally, return the configuration to wezterm:
 return config
