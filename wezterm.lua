@@ -12,6 +12,12 @@ config.default_prog = { 'nvim' }
 config.initial_cols = 120
 config.initial_rows = 28
 config.hide_tab_bar_if_only_one_tab = true
+config.keys = {
+  {
+    key = 'F11',
+    action = wezterm.action.ToggleFullScreen,
+  },
+}
 
 -- or, changing the font size and color scheme.
 config.font_size = 14
