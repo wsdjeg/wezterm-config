@@ -14,7 +14,7 @@ config.initial_rows = 28
 config.hide_tab_bar_if_only_one_tab = true
 
 -- or, changing the font size and color scheme.
-config.font_size = 13
+config.font_size = 14
 config.color_scheme = 'OneDark (base16)'
 config.font = wezterm.font(
   'SauceCodePro Nerd Font Mono',
