@@ -23,7 +23,7 @@ config.keys = {
 config.font_size = 14
 config.color_scheme = 'OneDark (base16)'
 config.font = wezterm.font(
-  'JetBrains Mono',
+  'Maple Mono NF CN',
   -- 'SauceCodePro Nerd Font Mono',
   { weight = 'Medium', stretch = 'Normal', style = 'Normal' }
 )
