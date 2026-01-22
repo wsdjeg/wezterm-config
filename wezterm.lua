@@ -23,9 +23,16 @@ config.keys = {
 config.font_size = 14
 config.color_scheme = 'OneDark (base16)'
 config.font = wezterm.font(
-  'SauceCodePro Nerd Font Mono',
+  'JetBrains Mono',
+  -- 'SauceCodePro Nerd Font Mono',
   { weight = 'Medium', stretch = 'Normal', style = 'Normal' }
 )
+config.window_padding = { -- 四周padding，为0消除边框间距
+		left = 10,
+		right = 10,
+		top = 10,
+		bottom = 7,
+	}
 
 -- Finally, return the configuration to wezterm:
 return config
