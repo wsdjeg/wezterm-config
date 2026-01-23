@@ -1,5 +1,5 @@
 -- Pull in the wezterm API
-local wezterm = require('wezterm')
+local wezterm = require('wezterm') ---@type Wezterm
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
@@ -35,3 +35,4 @@ config.window_padding = { -- 四周padding，为0消除边框间距
 }
 -- Finally, return the configuration to wezterm:
 return config
+-- vim: set ts=2 sts=2 sw=2 et ai si sta tw=78:
