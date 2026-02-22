@@ -22,11 +22,16 @@ config.keys = {
 -- or, changing the font size and color scheme.
 config.font_size = 14
 config.color_scheme = 'OneDark (base16)'
-config.font = wezterm.font(
-  'Maple Mono NF CN',
-  -- 'SauceCodePro Nerd Font Mono',
-  { weight = 'Medium', stretch = 'Normal', style = 'Normal' }
-)
+config.font = wezterm.font_with_fallback({
+  {
+    family = 'Maple Mono NF CN',
+    weight = 'Medium',
+    stretch = 'Normal',
+    style = 'Normal',
+  },
+  { family = 'Terminus', weight = 'Bold' },
+  'Noto Color Emoji',
+})
 config.window_padding = { -- 四周padding，为0消除边框间距
   left = 10,
   right = 10,
