@@ -29,8 +29,7 @@ config.font = wezterm.font_with_fallback({
     stretch = 'Normal',
     style = 'Normal',
   },
-  { family = 'Terminus', weight = 'Bold' },
-  'Noto Color Emoji',
+  { family = 'SauceCodePro Nerd Font Mono', weight = 'Medium' },
 })
 config.window_padding = { -- 四周padding，为0消除边框间距
   left = 10,
